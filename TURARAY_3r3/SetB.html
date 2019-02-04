@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>json&jquery</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	$(function(){
+	$.getJSON("https://jsonplaceholder.typicode.com/todos",function(data){
+		$data.each(function(data){
+			if(data.completed){
+			$('body').append("<div>"+data.userId+"</div>");
+			$('body').append("<div>"+data.Id+"</div>");
+			$('body').append("<div>"+data.title+"</div>");
+			$('body').append("<div>"+datacompleted+"</div>");
+}
+		})
+	})
+});
+</script>
+<div class="div1"></div>
+
+</body>
+</html>
